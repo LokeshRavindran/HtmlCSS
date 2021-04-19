@@ -61,3 +61,25 @@ footer {
   border: 1px solid rgb(70, 61, 61);
   background-color: rgb(70, 61, 61);
 }
+
+#main {
+  border: 5px solid rebeccapurple;
+  /* position: relative; */
+  float: left;
+}
+
+#main-left {
+  box-sizing: border-box;
+  border: 2px solid red;
+  float: left;
+  width: 50%;
+  height: 400px;
+}
+
+#main-right {
+  box-sizing: border-box;
+  border: 2px solid green;
+  float: left;
+  width: 50%;
+  height: 400px;
+}
