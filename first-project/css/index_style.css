@@ -61,3 +61,128 @@ footer {
   border: 1px solid rgb(70, 61, 61);
   background-color: rgb(70, 61, 61);
 }
+
+#sec-one {
+  /* border: 1px solid black; */
+  height: 500px;
+  width: 100%;
+  background-image: url(/first-project/images/showcase.jpg);
+  background-size: 100% 100%;
+  /* text-align: center; */
+  padding: 50px 0;
+}
+
+#sec-one-elements {
+  text-align: center;
+  margin-top: 100px;
+}
+#sec-one-elements h1 span {
+  color: rgb(228, 181, 93);
+}
+#sec-one h1 {
+  padding: 20px;
+  font-size: 60px;
+  color: white;
+}
+#sec-one p {
+  font-size: 20px;
+  color: white;
+}
+
+#sec-one button {
+  padding: 15px;
+  margin: 10px;
+  color: white;
+  background-color: rgb(37, 35, 35);
+  border: none;
+}
+
+#sec-one button:hover {
+  background-color: rgb(228, 181, 93);
+  color: black;
+}
+
+#sec-two {
+  box-sizing: border-box;
+  height: 500px;
+}
+
+#sec-two-one {
+  box-sizing: border-box;
+  background-image: url(/first-project/images/photo-1.jpg);
+  height: 100%;
+  background-size: 100% 100%;
+  display: inline;
+  width: 50%;
+  float: left;
+}
+#sec-two-two {
+  box-sizing: border-box;
+  display: inline;
+  width: 50%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  border: 100px solid rgb(46, 40, 40);
+  background-color: rgb(46, 40, 40);
+}
+
+#sec-two-two h1 {
+  font-size: 40px;
+  margin: 30px;
+  color: white;
+}
+#sec-two-two h1 span {
+  color: rgb(245, 208, 139);
+}
+#sec-two-two p {
+  font-size: 20px;
+  margin: 30px;
+  color: white;
+}
+#sec-two-two button {
+  padding: 15px;
+}
+
+#sec-three {
+  box-sizing: border-box;
+  height: 400px;
+  /* border: 2px solid green; */
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+#sec-three {
+  height: 300px;
+}
+
+#box1 {
+  display: inline;
+  height: 100%;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  border: 30px solid white;
+  box-sizing: border-box;
+}
+#box2 {
+  display: inline;
+  height: 100%;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  border: 30px solid rgb(245, 208, 139);
+  background-color: rgb(245, 208, 139);
+  box-sizing: border-box;
+}
+#box3 {
+  display: inline;
+  float: left;
+  height: 100%;
+  width: 33.33%;
+  text-align: center;
+  border: 30px solid white;
+  box-sizing: border-box;
+}
