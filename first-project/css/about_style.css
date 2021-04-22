@@ -63,23 +63,120 @@ footer {
 }
 
 #main {
-  border: 5px solid rebeccapurple;
-  /* position: relative; */
+  background-color: #ececec;
   float: left;
 }
 
 #main-left {
   box-sizing: border-box;
-  border: 2px solid red;
+  padding: 30px;
   float: left;
-  width: 50%;
+  width: 60%;
   height: 400px;
+  text-align: left;
+}
+
+#main-left h1 {
+  font-size: 30px;
+}
+
+#main-left p {
+  padding: 10px;
+}
+
+#main-left h1 span {
+  color: rgb(228, 181, 93);
 }
 
 #main-right {
   box-sizing: border-box;
-  border: 2px solid green;
-  float: left;
-  width: 50%;
+  width: 40%;
   height: 400px;
+  float: left;
+}
+
+#main-right div {
+  box-sizing: border-box;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-image: url(/first-project/images/photo-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.clear {
+  clear: both;
+}
+
+#customers {
+  /* border: 5px solid green; */
+  padding: 30px;
+  background-color: red;
+  background-image: url(/first-project/images/test-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#customers h1 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+#cus1 {
+  /* border: 2px solid red; */
+  height: 100px;
+  background-color: rgb(253, 187, 109, 0.7);
+  /* filter: opacity(10%); */
+}
+
+#cus1 div:nth-child(1) {
+  box-sizing: border-box;
+  display: inline;
+  height: 90%;
+  width: 7%;
+  float: left;
+  background-image: url(/first-project/images/person-1.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  margin: 5px;
+}
+#cus1 div:nth-child(2) {
+  box-sizing: border-box;
+  display: inline;
+  height: 100%;
+  width: 90%;
+  float: left;
+  padding: 20px;
+}
+
+#cus2 {
+  /* border: 2px solid blue; */
+  height: 100px;
+  margin-top: 20px;
+  background-color: rgb(253, 187, 109, 0.7);
+  margin-bottom: 20px;
+}
+
+#cus2 div:nth-child(1) {
+  box-sizing: border-box;
+  display: inline;
+  height: 90%;
+  width: 7%;
+  float: left;
+  background-image: url(/first-project/images/person-2.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  margin: 5px;
+}
+#cus2 div:nth-child(2) {
+  box-sizing: border-box;
+  display: inline;
+  height: 100%;
+  width: 90%;
+  float: left;
+  padding: 20px;
 }
