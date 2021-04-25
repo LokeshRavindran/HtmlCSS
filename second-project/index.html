@@ -9,18 +9,19 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/second-project/css/style.css" />
+    <link rel="stylesheet" media="" href="/second-project/css/media.css" />
     <title>Welcome To EdgeLedger</title>
   </head>
   <body>
-    <header>
-      <nav id="nav">
+    <header id="home">
+      <nav id="nav" class="navbar top">
         <h1>
           <i class="fas fa-book-open color-green"></i
           ><span class="color-green">Edge</span>Ledger
         </h1>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="">Cases</a></li>
           <li><a href="">Blog</a></li>
           <li><a href="">Contact</a></li>
@@ -29,8 +30,63 @@
       <div id="showcase-contents">
         <h1>The Sky Is The Limit</h1>
         <p>We provide world class financial assistance</p>
-        <a href="">&gt Read More</a>
+        <a href="#about">&gt Read More</a>
       </div>
     </header>
+    <section id="about" class="moved">
+      <div id="what-we-do">
+        <div>
+          <i class="fas fa-university fa-2x icons"></i>
+          <h2>Investment Banking</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore,
+            iusto!
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-book-reader fa-2x icons"></i>
+          <h2>Portfolio Manager</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore,
+            iusto!
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-pencil-alt fa-2x icons"></i>
+          <h2>Tax & Custodial</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore,
+            iusto!
+          </p>
+        </div>
+      </div>
+      <div id="image-part">
+        <div>
+          <div id="image"></div>
+        </div>
+        <div>
+          <h4>What you are looking for</h4>
+          <h2>We provide bespoke solutions</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+            illum, animi earum ea amet sequi reiciendis sit corporis sunt iusto
+            cupiditate odio maxime adipisci cumque eligendi nemo dolore id
+            itaque?
+          </p>
+          <a href="#home">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const navbar = document.getElementById("nav");
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+        } else {
+          navbar.classList.add("top");
+        }
+      };
+    </script>
   </body>
 </html>
