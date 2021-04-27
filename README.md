@@ -3,4 +3,4 @@ HTML and CSS projects
 
 first-project  --> Hotel project without any media queries or any responsive design
 
-second-project --> 
+second-project --> Company website using flex
