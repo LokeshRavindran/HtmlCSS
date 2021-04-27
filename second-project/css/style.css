@@ -27,7 +27,7 @@ a {
 
 /* Header */
 header {
-  background-image: url(/images/home/showcase.jpg);
+  background-image: url("/images/home/showcase.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,7 +41,6 @@ header::before {
   background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
   width: 100%;
-  position: absolute;
 }
 
 header * {
@@ -145,57 +144,10 @@ header * {
   margin: 20px 0;
 }
 
-/* #about #image-part {
-  display: flex;
-}
-
-#about #image-part div {
-  flex: 1;
-  height: 60vh;
-}
-
-#about #image-part div:nth-child(1) div {
-  background-image: url(/images/home/people.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100% 100%;
-}
-
-#about #image-part div:nth-child(2) {
-  background-color: #28a745;
-  padding: 30px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-#about #image-part div:nth-child(2) h4 {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-#about #image-part div:nth-child(2) h2 {
-  margin-bottom: 10px;
-  font-size: 40px;
-}
-#about #image-part div:nth-child(2) p {
-  line-height: 1.6;
-  margin: 10px 0;
-}
-
-#about #image-part div:nth-child(2) a {
-  color: white;
-  padding: 15px 30px;
-  border: 1px solid white;
-  border-radius: 10px;
-  background: transparent;
-  margin: 10px 0px;
-} */
-
 #about-image {
   display: flex;
 }
+
 #about-image div {
   flex: 1;
 }
@@ -322,6 +274,119 @@ header * {
   margin: 10px 0px;
 }
 
+#who-are-we {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+#who-are-we-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+}
+#who-are-we-text h4,
+#who-are-we-text h2,
+#who-are-we-text p {
+  flex: 1;
+}
+
+#who-are-we-text h2 {
+  margin: 20px 0px;
+  font-size: 40px;
+}
+#who-are-we-text p {
+  margin: 10px;
+}
+
+#who-are-we-image {
+  display: flex;
+  margin: 20px;
+}
+
+#who-are-we-image div {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+#who-are-we-image div img {
+  height: 80%;
+  width: 100%;
+  border-radius: 50%;
+}
+#who-are-we-image div h4 {
+  margin: 10px;
+}
+
+#who-are-we-image div p {
+  margin: 10px;
+}
+
+/* contact */
+#contact {
+  display: flex;
+}
+#contact div {
+  flex: 1;
+}
+#contact #image img {
+  height: 100%;
+  width: 100%;
+}
+#contact #contact-form {
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  justify-content: center;
+}
+
+#contact #contact-form p {
+  font-size: 40px;
+}
+#contact #contact-form form {
+  padding: 20px 0px;
+  height: 100%;
+}
+#contact #contact-form form input {
+  padding: 12px;
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+}
+#contact #contact-form form button {
+  padding: 12px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* footer */
+footer {
+  height: 200px;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+footer #social {
+  margin: 10px;
+}
+
+footer #social a {
+  margin-right: 30px;
+  color: white;
+}
+footer p {
+  color: white;
+  margin: 10px;
+}
+
 /* media queries */
 
 @media (max-width: 768px) {
@@ -359,5 +424,11 @@ header * {
   }
   #blog {
     flex-direction: column-reverse;
+  }
+  #who-are-we-image {
+    flex-direction: column;
+  }
+  #contact {
+    flex-direction: column;
   }
 }
