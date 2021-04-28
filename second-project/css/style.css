@@ -387,6 +387,92 @@ footer p {
   margin: 10px;
 }
 
+/* blog page */
+
+/* blog header */
+#blog-home {
+  height: 30vh;
+  background-image: url("/images/home/blog.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#blog-home #heading {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#blog-home #heading p {
+  font-size: 55px;
+  font-weight: 300;
+}
+
+/* sections */
+
+.general-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.general-container .general-container-column1,
+.general-container .general-container-column2 {
+  flex: 1;
+}
+
+.general-container .general-container-column1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.general-container .general-container-column2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+.general-container .general-container-column2 .wrap {
+  padding: 30px;
+}
+.general-container .general-container-column2 .wrap h1 {
+  font-size: 40px;
+}
+.general-container .general-container-column2 .wrap p:nth-child(2) {
+  margin: 10px 0px;
+}
+.general-container .general-container-column2 .wrap p:nth-child(2) i {
+  margin: 5px;
+}
+.general-container .general-container-column2 .wrap p:nth-child(3) {
+  margin: 40px 0px;
+}
+.general-container .general-container-column2 .wrap a {
+  margin: 20px 0px;
+  background-color: #333;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
+#section2 .general-container {
+  flex-direction: row-reverse;
+}
+#section2 .general-container .general-container-column2 {
+  background-color: #333;
+  color: white;
+}
+
+#section2 .general-container .general-container-column2 .wrap a {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
 /* media queries */
 
 @media (max-width: 768px) {
@@ -429,6 +515,15 @@ footer p {
     flex-direction: column;
   }
   #contact {
+    flex-direction: column;
+  }
+  #section1 .general-container {
+    flex-direction: column;
+  }
+  #section2 .general-container {
+    flex-direction: column;
+  }
+  #section3 .general-container {
     flex-direction: column;
   }
 }
