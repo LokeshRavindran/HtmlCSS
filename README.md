@@ -6,3 +6,5 @@ first-project  --> Hotel project without any media queries or any responsive des
 second-project --> Company website using flex
 
 third-project (mini projects) --> 1) Presentation website
+
+fourth-project --> Newsgrid using grids
