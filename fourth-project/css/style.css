@@ -49,10 +49,6 @@ li {
   color: white;
 }
 
-/* body {
-  height: 200vh;
-} */
-
 /* nav bar */
 
 nav {
@@ -248,6 +244,93 @@ img {
   padding: 0.8rem;
 }
 
+/* about page */
+/* main section */
+
+#about-main-section {
+  background-color: #f4f4f4;
+}
+#about-main-section .container {
+  padding: 2rem;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 1rem;
+}
+#about-main-section .container #main-section {
+  grid-row: 1 / span 3;
+  background-color: white;
+  padding: 1rem;
+}
+#about-main-section .container #main-section h1 {
+  font-size: 2.5rem;
+}
+#about-main-section .container #main-section p {
+  margin: 1rem 0;
+}
+
+/* aside section */
+#about-main-section .container .aside-section > * {
+  margin: 0.5rem 0rem;
+}
+.aside-section {
+  background-color: #c72727;
+  padding: 1rem;
+  color: white;
+}
+.aside-section a {
+  display: block;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* article page */
+/* main section */
+#article-main-section {
+  background-color: #f4f4f4;
+}
+#article-main-section .container {
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 1rem;
+}
+
+#article-main-section .container #main-section {
+  grid-row: 1 / span 6;
+  padding: 1rem;
+  background-color: white;
+}
+#article-main-section .container #main-section p {
+  margin: 1rem 0;
+}
+
+#user-card {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+#user-card p i {
+  margin-right: 5px;
+}
+
+#user-card h6 {
+  text-align: right;
+}
+/* aside section */
+#article-main-section .container #aside-section-article1 {
+  background-color: white;
+  padding: 1rem;
+}
+#article-main-section .container #aside-section-article1 a {
+  display: block;
+  padding: 0.5rem 0rem;
+  border-bottom: 1px dotted;
+}
+#article-main-section .container #aside-section-article2 {
+  background-color: rgb(218, 151, 28);
+}
+
 @media (max-width: 768px) {
   /* nav */
 
@@ -323,5 +406,24 @@ img {
   #foot-box2 form > * {
     margin: 10px 0px;
     padding: 8px;
+  }
+
+  /* about page */
+  #about-main-section .container {
+    grid-template-columns: 1fr;
+  }
+  #about-main-section .container .aside-section {
+    text-align: center;
+  }
+
+  /* article */
+  #article-main-section .container {
+    grid-template-columns: 1fr;
+  }
+  #article-main-section .container #aside-section-article2 {
+    text-align: center;
+  }
+  #article-main-section .container #aside-section-article2 a {
+    margin: 5px 0px;
   }
 }
