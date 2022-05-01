@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container-brows">
+      <div id="brows"></div>
+    </div>
+    <div id="container-eye">
+      <div id="eye"></div>
+    </div>
+    <script>
+      let eye = document.getElementById("eye");
+      document.onmousemove = function (e) {
+        // adjust the multiplication value based on the div height and width
+        let horizontalPosition = (e.clientX * 90) / window.innerWidth;
+        let verticalPosition = (e.clientY * 40) / window.innerHeight;
+        eye.style.left = horizontalPosition + "px";
+        eye.style.top = verticalPosition + "px";
+      };
+    </script>
+  </body>
+</html>
