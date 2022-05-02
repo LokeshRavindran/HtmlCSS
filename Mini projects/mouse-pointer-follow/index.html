@@ -15,10 +15,12 @@
       let eye = document.getElementById("eye");
       document.onmousemove = function (e) {
         // adjust the multiplication value based on the div height and width
-        let horizontalPosition = (e.clientX * 90) / window.innerWidth;
-        let verticalPosition = (e.clientY * 40) / window.innerHeight;
-        eye.style.left = horizontalPosition + "px";
-        eye.style.top = verticalPosition + "px";
+        let horizontalPosition = (e.clientX * 100) / window.innerWidth + "%";
+        let verticalPosition = (e.clientY * 100) / window.innerHeight + "%";
+        eye.style.left = horizontalPosition;
+        eye.style.top = verticalPosition;
+        eye.style.transform =
+          "translate(-" + horizontalPosition + ", -" + verticalPosition + ")";
       };
     </script>
   </body>
